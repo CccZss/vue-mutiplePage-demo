@@ -1,9 +1,13 @@
 import Vue from 'vue'
 import App from './App'
+import router from './router/router.js'
+import store from './store/index.js'
+
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  template: '<App/>',
-  components: { App }
-})
+	router,
+	store,
+  	template: '<App/>',
+  	components: { App }
+}).$mount('#app')

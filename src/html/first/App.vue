@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    this is one
+    this is first page 
   </div>
 </template>
 
