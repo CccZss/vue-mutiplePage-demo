@@ -1,4 +1,4 @@
-/*import * as types from '../types'
+import * as types from '../types'
 
 const state = {
     tags:[],
@@ -31,4 +31,3 @@ export default {
   actions,
   mutations
 }
-*/
