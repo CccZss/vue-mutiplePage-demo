@@ -19,7 +19,7 @@
 
 <script>
 import nav1 from 'components/demo/nav1'
-import options from 'components/demo/options'
+import options from './components/options'
 import tag from 'components/demo/tag'
 
 export default {

@@ -3,6 +3,7 @@
 		<ul class="options">
 	      <router-link :to="One" tag="li" exact @click.native="select(One)">One</router-link>
 	      <router-link :to="Home" tag="li" exact  @click.native="select(Home)">Home</router-link>
+	      <li><a href="./first.html">first</a></li>
 	    </ul>
 	</div>
 </template>
@@ -46,5 +47,8 @@ export default {
 	}
 	li{
 		padding: 15px;
+	}
+	a{
+		text-decoration: none;
 	}
 </style>

@@ -8,11 +8,11 @@ Vue.use(VueRouter)
 
 /* eslint-disable no-new */
 const router = new VueRouter({
-  //mode: 'history',
-  mode: 'hash',
+ // mode: 'history',
+ mode: 'hash',
   linkActiveClass: 'u-link--Active',
-  base: 'file:///C:/Users/czs135/Desktop/德育量化/前端代码/Vue-manageSystem/dist',
-  //base: './html',
+ base: 'file:///C:/Users/czs135/Desktop/德育量化/前端代码/Vue-manageSystem/dist',
+ // base: './html',
   routes,
 })
 

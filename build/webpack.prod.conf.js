@@ -36,7 +36,7 @@ var webpackConfig = merge(baseWebpackConfig, {
         warnings: false
       }
     }),
-    new CleanPlugin(['../dist']),  //清空生成目录
+    //new CleanPlugin(['../dist']),  //清空生成目录
     new webpack.optimize.OccurrenceOrderPlugin(),
     // extract css into its own file
     new ExtractTextPlugin(utils.assetsPath('css/[name].[contenthash].css')),
@@ -119,9 +119,10 @@ for (var pathname in pages) {
       },
     // necessary to consistently work with multiple chunks via CommonsChunkPlugin
     chunksSortMode: 'dependency',
-    excludeChunks: Object.keys(pages).filter(item => {
-      return (item != pathname)
-    })
   };
+  if (pathname in module.exports.entry) {    //为页面导入所需的依赖
+    conf.chunks = ['vendor','manifest', pathname];
+    conf.hash = false;
+  }
   module.exports.plugins.push(new HtmlWebpackPlugin(conf));
 }

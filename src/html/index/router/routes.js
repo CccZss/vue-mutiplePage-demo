@@ -1,11 +1,10 @@
-
 const routes = [
   {
     path: '/index.html',
     meta: {
       title: 'Home'
     },
-    component: require('components/demo/Home.vue')
+    component: require('../components/Home.vue')
   },
   {
     name: 'home',
@@ -13,7 +12,7 @@ const routes = [
     meta: {
       title: 'Home'
     },
-    component: require('components/demo/Home.vue')
+    component: require('../components/Home.vue')
   },
   {
     name: 'one',
@@ -22,7 +21,7 @@ const routes = [
       title: 'One',
       requiresAuth: true,
     },
-    component: require('components/demo/One.vue'),
+    component: require('../components/One.vue'),
   },
   {
     path: '*',
@@ -33,4 +32,4 @@ const routes = [
   },
 ]
 
-export default routes
+module.exports = routes

@@ -14,7 +14,7 @@
 export default {
 	data: function(){
 		return {
-			userName: '123',
+			userName: '121',
             headImg: require("assets/logo.png"),
 		}
 	},
