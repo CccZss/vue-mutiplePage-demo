@@ -1,6 +1,6 @@
 # mutiple-page
 
-> A Vue.js project
+> A Vue.js project ( vue 多页面脚手架 )
 
 ## Build Setup
 
