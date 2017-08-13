@@ -1,0 +1,83 @@
+@import '~iview/src/styles/index.less';
+@primary-color: #47cb89;
+
+body, html {
+	height: 100%;
+}
+body {
+	padding-top: 57px;
+    background-color: #272727;
+}
+
+
+/*homepage 组织描述气泡板样式修改*/
+.ivu-poptip-rel{
+	width: 100%
+}
+.ivu-poptip-inner {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.55);
+}
+
+/*进入组织时验证框的样式*/
+.ivu-modal-confirm-footer {
+    margin-top: 15px;
+    text-align: right;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+	html {
+		font-size: 16px;
+	}
+	body {
+		padding-top: 8.8rem;
+		font-size: 2rem;
+	}
+
+	.ivu-input-small {
+		font-size: 2rem;
+		height: 3.5rem;
+	}
+
+	//导航栏
+	.ivu-menu-light.ivu-menu-horizontal .ivu-menu-item ,.ivu-menu {
+    	font-size: 2.5rem;	
+    	line-height: 6rem;
+	}
+	.ivu-menu-horizontal .ivu-menu-submenu .ivu-select-dropdown .ivu-menu-item {
+		font-size: 2.5rem !important;
+	}
+	.ivu-menu-horizontal {
+    	height: 6rem;
+	}
+
+	//按钮
+	.ivu-btn {
+   	 	font-size: 2.5rem;
+		padding: 0.5rem 2rem;
+	}
+
+	// input
+	.ivu-input {
+   	    height: 5rem;
+	    font-size: 2.5rem;
+	    padding-left: 1rem;
+	}	
+
+	// 弹出框 
+	.ivu-modal {
+		width: 80% !important;
+	}
+	.ivu-modal-confirm-body {
+		font-size: 2rem;
+	}
+
+	// 全局提示
+	.ivu-message {
+		font-size: 2.5rem;
+	}
+	.ivu-message .ivu-icon {
+		font-size: 2.5rem;
+	}
+}
